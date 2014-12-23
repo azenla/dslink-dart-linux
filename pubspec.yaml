@@ -1,0 +1,6 @@
+name: dslink-linux
+dependencies:
+  dslink:
+    git: https://github.com/IOT-DSA/sdk-dslink-dart.git
+  linux:
+    git: https://github.com/DirectMyFile/linux.git
