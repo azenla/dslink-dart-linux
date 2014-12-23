@@ -3,8 +3,8 @@ import "package:dslink/link.dart";
 import "package:linux/cpu.dart";
 import "package:linux/leds.dart";
 
-void main() {
-  var link = new DSLink("Linux", host: "rnd.iot-dsa.org");
+void main(args) {
+  var link = new DSLink("Linux", host: "rnd.iot-dsa.org", debug: args.contains("-d") || args.contains("--debug"));
   var ledsNode = link.createRootNode("LEDs");
   var cpusNode = link.createRootNode("CPUs");
   var leds = LED.list();
